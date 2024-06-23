@@ -1,5 +1,10 @@
-import 'package:ecom_firebase_app/utils/theme/custom_theme/eletevated_theme.dart';
-import 'package:ecom_firebase_app/utils/theme/custom_theme/text_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/bottom_sheet_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/check_box_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/chip_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/eletevated_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/outlined_button.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/text_field_theme.dart';
+import 'package:ecom_flutter_getx/utils/theme/custom_theme/text_theme.dart';
 import 'package:flutter/material.dart';
 
 class ShopTheme {
@@ -13,7 +18,13 @@ class ShopTheme {
       primaryColor: Colors.green,
       scaffoldBackgroundColor: Colors.white,
       elevatedButtonTheme: ShopElevatedButtonTheme.lightElevatedButton,
-      textTheme: ShopTextTheme.lightTextTheme);
+      textTheme: ShopTextTheme.lightTextTheme,
+      chipTheme: ShopChipTheme.lightChipTheme,
+      checkboxTheme: ShopCheckBoxTheme.lightCheckBoxTheme,
+      bottomSheetTheme: ShopBottomSheetTheme.lightBottomSheetTheme,
+      outlinedButtonTheme: ShopOutlinedButtonTheme.lightOutlinedButton,
+      inputDecorationTheme: ShopTextFieldTheme.lightInputDecorationTheme
+      );
 
   // dark theme
   static ThemeData darkTheme = ThemeData(
@@ -23,5 +34,11 @@ class ShopTheme {
       primaryColor: Colors.green,
       scaffoldBackgroundColor: Colors.black,
       elevatedButtonTheme: ShopElevatedButtonTheme.darkElevatedButton,
-      textTheme: ShopTextTheme.darkTextTheme);
+      textTheme: ShopTextTheme.darkTextTheme,
+      chipTheme: ShopChipTheme.darkChipTheme,
+      checkboxTheme: ShopCheckBoxTheme.darkCheckBoxTheme,
+      bottomSheetTheme: ShopBottomSheetTheme.darkBottomSheetTheme,
+      outlinedButtonTheme: ShopOutlinedButtonTheme.darkOutlinedButton,
+      inputDecorationTheme: ShopTextFieldTheme.darkInputDecorationTheme
+     );
 }
