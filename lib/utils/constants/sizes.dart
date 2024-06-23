@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-
 class ShopSizes {
-  ShopSizes._();
-
   // padding and margin sizes
   static const double xs = 4.0;
   static const double sm = 8.0;
